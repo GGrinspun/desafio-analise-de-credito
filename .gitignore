@@ -1,0 +1,13 @@
+# Ambiente virtual
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Dados (se não puderem ser versionados)
+data/*
+!data/.gitkeep
