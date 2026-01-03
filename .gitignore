@@ -1,5 +1,7 @@
 # Ambiente virtual
 .venv/
+.env
+
 
 # Jupyter
 .ipynb_checkpoints/
@@ -11,3 +13,19 @@ __pycache__/
 # Dados (se não puderem ser versionados)
 data/*
 !data/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/*
+data/processed/*
+data/outputs/*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CatBoost artifacts
+notebooks/catboost_info/
+
