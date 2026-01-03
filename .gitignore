@@ -30,6 +30,11 @@ data/*
 !data/desafio_01/scored/
 !data/desafio_01/scored/**
 
+# Dados intermediários do Desafio 01
+data/desafio_01/raw/
+data/desafio_01/processed/
+data/desafio_01/final/
+
 # ==========================
 # Artefatos de modelos
 # ==========================
