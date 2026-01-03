@@ -10,30 +10,30 @@ Os projetos foram desenvolvidos em Jupyter Notebooks, com foco em **clareza, rep
 '''
 ## Estrutura do Repositório
 
-notebooks/
-
-00_data_extraction.ipynb
-
-01_proj1_eda_and_preprocessing.ipynb
-
-02_proj1_modeling.ipynb
-
-03_proj2_completo.ipynb
-
-
+```text
 data/
+├── desafio_01/
+│   ├── raw/        # dados originais (não versionados)
+│   ├── processed/  # dados processados (não versionados)
+│   └── scored/     # base Out-of-Time escorada (Projeto 1)
+│
+├── desafio_02/
+│   ├── raw/        # dados originais (não versionados)
+│   └── processed/  # dados processados (não versionados)
+│
+└── outputs/        # artefatos adicionais
 
-raw/ # dados originais (não versionados)
-
-processed/ # dados processados (não versionados)
-
-outputs/ # artefatos finais (ex.: OOT escorada)
-
+notebooks/
+├── 00_data_extraction.ipynb
+├── 01_proj1_eda_and_preprocessing.ipynb
+├── 02_proj1_modeling.ipynb
+└── 03_proj2_completo.ipynb
 
 .gitignore
-
 requirements.txt
-'''
+README.md
+```
+
 
 ---
 
@@ -89,6 +89,23 @@ Desenvolver um **modelo de concessão de crédito** para classificar clientes co
   - Aplicação do modelo e do cutoff definido na base de Teste
   - Estratégia de **ancoragem**, sem recalibração
   - Geração de score e decisão de crédito (sem criação de TARGET)
+
+
+---
+### Base Out-of-Time (OOT) – Projeto 1
+
+A base **Out-of-Time (OOT)** do Projeto 1 é tratada como **base cega**, não possuindo a variável alvo (`TARGET`) e sendo utilizada exclusivamente para **escoragem e simulação de decisão de crédito**.
+
+Após a aplicação do modelo treinado e do **cutoff definido na base de Teste**, a base OOT é:
+
+- Escorada utilizando **estratégia de ancoragem**
+- Não recalibrada
+- Persistida separadamente do fluxo de modelagem
+
+A base escorada é salva em:
+
+data/desafio_01/scored
+
 
 ---
 
