@@ -1,31 +1,35 @@
-# Ambiente virtual
+# ==========================
+# Ambiente virtual / configs
+# ==========================
 .venv/
 .env
 
-
-# Jupyter
-.ipynb_checkpoints/
-
+# ==========================
 # Python
+# ==========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Dados (se não puderem ser versionados)
+# ==========================
+# Jupyter
+# ==========================
+.ipynb_checkpoints/
+
+# ==========================
+# Dados (não versionados)
+# ==========================
 data/*
 !data/.gitkeep
 
-# Jupyter
-.ipynb_checkpoints/
+# ==========================
+# Artefatos de modelos
+# ==========================
+**/catboost_info/
 
-# Data
-data/raw/*
-data/processed/*
-data/outputs/*
-
-# OS
+# ==========================
+# Sistema Operacional
+# ==========================
 .DS_Store
 Thumbs.db
-
-# CatBoost artifacts
-notebooks/catboost_info/
-
