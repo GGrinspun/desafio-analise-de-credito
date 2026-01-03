@@ -18,10 +18,17 @@ __pycache__/
 .ipynb_checkpoints/
 
 # ==========================
-# Dados (não versionados)
+# Dados (regra geral)
 # ==========================
 data/*
 !data/.gitkeep
+
+# ==========================
+# Entregas do Desafio 01
+# ==========================
+!data/desafio_01/
+!data/desafio_01/scored/
+!data/desafio_01/scored/**
 
 # ==========================
 # Artefatos de modelos
